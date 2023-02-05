@@ -44,7 +44,15 @@ const gameEngine = () => {
     gameOverSound.play();
     musicSound.pause();
     inputDir = { x: 0, y: 0 };
-    alert("Game Over!. Press any  key to play again!");
+
+
+    // --------
+      displayGameOverPopup();
+    // --------
+    
+    
+    
+    // alert("Game Over!. Press any  key to play again!");
     score = 0;
     snakeArr = [{ x: 13, y: 15 }];
     musicSound.play();
@@ -144,3 +152,17 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+
+function displayGameOverPopup() {
+  let optionButton = document.querySelector('.controls-button');
+  let closeButton = document.querySelector('.close');
+  let modal = document.querySelector('.entire-page');
+
+    modal.style.display = 'block';
+  
+
+  closeButton.addEventListener('click', (clk) => {
+    modal.style.display = 'none';
+  });
+}

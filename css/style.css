@@ -56,3 +56,103 @@
     border-radius: 8px;
 }
 
+
+
+
+/* ----------------------- */
+/* popup box styling */
+
+
+* {
+  margin: 0;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+.entire-page {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: none;
+}
+
+.close {
+  transition: 0.2s ease;
+  color: rgb(255, 225, 0)
+}
+.close:hover {
+  color:black;
+  transition: 0.2s ease;
+}
+
+.button-holder {
+  position: relative;
+}
+
+.control-heading>h1 {
+  padding-left: 10%;
+}
+
+.modal {
+  /* padding-top: 1%; */
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  height:30%;
+  background-color: rgb(29, 165, 255);
+  border: 2px solid black;
+
+  overflow: scroll;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-panel {
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  padding-right: 3%;
+  /* background-color: red; */
+  height: 100px;
+}
+
+.top-panel>.control-heading {
+  font-size:20px;
+  justify-self: flex-start;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: red; */
+  width: 400px;
+  /* padding-left: 100px; */
+  text-align: center;
+}
+
+.modal-content>.control-description {
+  margin: auto;
+  width: 80%;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.modal-content>.control-description>p {
+  margin: 17px;
+}
+
+.control-description span {
+  background-color: rgb(196, 193, 193);
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+

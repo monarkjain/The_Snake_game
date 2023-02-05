@@ -10,8 +10,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="./js/popupBox.js" defer></script>
 </head>
 <body>
+
+  <!-- ------------------------------------- -->
+
+  <div class="entire-page">
+    <div class="modal">
+      <div class="modal-content">
+          <div class="top-panel">
+            <div class="control-heading">
+              <h1>Game Over</h1>
+            </div>  
+            <span class="close">&times;</span>
+          </div>
+          <div class="control-description">
+            <p>Close the box to play again !</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------------- -->
+
     <div class="body">
         <div id="scoreBox">Score: 0</div>
         <div id="hiscoreBox">HiScore: 0</div>
