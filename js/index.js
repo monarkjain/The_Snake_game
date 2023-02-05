@@ -1,8 +1,8 @@
 let inputDir = { x: 0, y: 0 };
 const foodsound = new Audio("../music/food.mp3");
-const gameOverSound = new Audio("../music/gameover.mp3");
+const gameOverSound = new Audio("../music/game-over.wav");
 const moveSound = new Audio("../music/move.mp3");
-const musicSound = new Audio("../music/music.mp3");
+const musicSound = new Audio("../music/bg-music.mp3");
 let speed = 8;
 let score = 0;
 let lastPaintTime = 0;
@@ -11,6 +11,7 @@ let food = { x: 6, y: 7 };
 let scoreBox = document.getElementById("scoreBox");
 let hiscoreBox = document.getElementById("hiscoreBox");
 
+musicSound.play();
 
 const main = (ctime) => {
   window.requestAnimationFrame(main);
