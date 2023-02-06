@@ -181,3 +181,28 @@
   justify-content: center;
   align-items: center;
 }
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.body {
+  animation: animatedGradient 10s ease infinite;
+  background: linear-gradient(to right, 
+    rgba(255,0,0,0.8), 
+    rgba(0,255,0,0.8), 
+    rgba(0,0,255,0.8));
+  background-size: 400% 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
