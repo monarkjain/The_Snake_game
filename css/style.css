@@ -13,6 +13,31 @@
     align-items: center;
 
 }
+@media only screen and (max-width: 480px) {
+  .body {
+    background-size: cover;
+    background-image: linear-gradient(to right, red , yellow);
+  }
+  #board {
+    width: 55vmin;
+    height: 57vmin;
+  }
+  h1{
+    font-size: 20px;
+  }
+  p{
+    font-size: 13px;
+  }
+  #scoreBox {
+    font-size: 1px;
+    right: 100px;
+  }
+  #hiscoreBox {
+    font-size: 1px;
+    right: 60px;
+  }
+}
+
 #board{
     background: linear-gradient(rgb(170,236,170),rgb(236,236,167));
     width: 90vmin;
@@ -154,30 +179,4 @@
   background-color: rgb(196, 193, 193);
   padding: 2px 5px 2px 5px;
   border-radius: 5px 5px 5px 5px;
-}
-
-
-@keyframes animatedGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.body {
-  animation: animatedGradient 10s ease infinite;
-  background: linear-gradient(to right, 
-    rgba(255,0,0,0.8), 
-    rgba(0,255,0,0.8), 
-    rgba(0,0,255,0.8));
-  background-size: 400% 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
