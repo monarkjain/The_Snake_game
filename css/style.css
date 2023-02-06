@@ -13,31 +13,6 @@
     align-items: center;
 
 }
-@media only screen and (max-width: 480px) {
-  .body {
-    background-size: cover;
-    background-image: linear-gradient(to right, red , yellow);
-  }
-  #board {
-    width: 55vmin;
-    height: 57vmin;
-  }
-  h1{
-    font-size: 20px;
-  }
-  p{
-    font-size: 13px;
-  }
-  #scoreBox {
-    font-size: 1px;
-    right: 100px;
-  }
-  #hiscoreBox {
-    font-size: 1px;
-    right: 60px;
-  }
-}
-
 #board{
     background: linear-gradient(rgb(170,236,170),rgb(236,236,167));
     width: 90vmin;
